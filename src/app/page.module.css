@@ -1,0 +1,11 @@
+.nameContainer {
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    border-color: #413E35;;
+}
+
+.nameTitle {
+    font-family: 'Arial';
+    font-weight: 200;
+    letter-spacing: 5px;
+}

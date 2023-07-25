@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
-import { routes } from './routers'
 
 import './globals.css'
+import { Navigation } from './components/Navigation/Navigation'
+
+import styles from './styles/main.module.css'
 
 export const metadata: Metadata = {
   title: 'Juan Hurtado Developer Portfolio',
@@ -14,19 +16,8 @@ export default function RootLayout({children,}: {
   return (
     <html lang="en">
       <body>
-        <header>
-          <nav className='navbar'>
-            {
-              // routes.map((route) => (
-              //   <NavItem
-              //     key = {route.path}
-              //     route = {route}
-              //   />
-              // ))
-            }
-          </nav>
-        </header>
-        <main>
+        <Navigation />
+        <main className={styles.mainContent}>
           {children}
         </main>
         <footer />

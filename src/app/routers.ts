@@ -1,11 +1,11 @@
-interface Routes {
+export interface Route {
     label: string;
     path: string;
 }
 
-export const routes: Routes[] = [
-    { label: 'Me', path: '/' },
-    { label: 'Skills', path: '/skills' },
-    { label: 'Projects', path: '/projects' },
-    { label: 'Contact', path: '/contact' },
+export const routes: Route[] = [
+    { label: 'ME', path: '/' },
+    { label: 'SKILLS', path: '/skills' },
+    { label: 'PROJECTS', path: '/projects' },
+    { label: 'CONTACT', path: '/contact' },
 ]

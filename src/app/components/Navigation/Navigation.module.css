@@ -1,0 +1,27 @@
+.header {
+    border-image-source: url('../../../../assets/borderDecoration.svg');
+    border-image-slice: 0 0 34 0;
+    border-image-width: 0 0 20px 0;
+    border-image-repeat: round;
+
+    border-width: 0 0 20px 0;
+    border-style: solid;
+
+    height: 10vh;
+    margin: 0rem 2rem;
+}
+
+.navbar {
+    height: 100%;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}

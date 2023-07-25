@@ -1,0 +1,45 @@
+.navitem {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    font-family: 'Arial';
+}
+
+.navitem p {
+    margin: 0;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: #413E35;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navButton {
+    color: #413E35;
+    border: none;
+    padding: 0.2rem 0rem;
+    cursor: pointer;
+    width: 75%;
+    height: 50%;
+
+    border-color: #AAA591;
+    border-style: solid;
+    border-width: 2px 0 2px 0;
+}
+
+.buttonContent {
+    display: flex;
+    background-color: #AAA591;
+    height: 100%;
+    padding-left: 0.5rem;
+}
+
+.routeIcon {
+    width: 25px;
+    height: 25px;
+    background-color: #413E35;
+}

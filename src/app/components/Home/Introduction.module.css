@@ -1,0 +1,39 @@
+hr.solid {
+    border: 1px solid #000000;
+}
+
+.IntroContainer {
+    width: 40%;
+    background-color: #E1DBC1;
+    font-family: 'Arial', sans-serif;
+}
+
+.IntroContainer p {
+    margin: 0;
+}
+
+.IntroContainer header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+
+    background-color: #4B483F;
+    color: #E1DBC1;
+
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.IntroContainer main {
+    padding: 1rem;
+}
+
+.IntroInfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profilePic {
+    max-width: 30%;
+    max-height: 400px;
+}

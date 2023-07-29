@@ -8,4 +8,11 @@
     font-family: 'Arial';
     font-weight: 200;
     letter-spacing: 5px;
+    margin: 1rem 0;
+}
+
+.homeContainer {
+    display: flex;
+    margin: 2rem 0.5rem;
+    justify-content: space-around;
 }

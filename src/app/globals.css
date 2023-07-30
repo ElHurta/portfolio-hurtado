@@ -3,7 +3,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: #D7D1B8;
-  background: radial-gradient(circle, rgba(214,208,184,1) 0%, rgba(199,192,161,1) 100%);
+  background: radial-gradient(circle, rgba(214,208,184,1) 0%, rgba(186,180,151,1) 100%);
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;

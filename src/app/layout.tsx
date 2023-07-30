@@ -17,6 +17,7 @@ export default function RootLayout({children,}: {
   return (
     <html lang="en">
       <body>
+        <section className={styles.decorationGrid} />
         <Navigation />
         <main className={styles.mainContent}>
           {children}

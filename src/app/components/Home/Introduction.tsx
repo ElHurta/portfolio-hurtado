@@ -15,9 +15,12 @@ export default function Introduction() {
             alt="Picture of the author"
         />
         <article className={styles.bulletDesc}>
-          <p>
-            I am a software developer with a passion for learning.
-          </p>
+          <ul>
+            <li>Full Stack Developer</li>
+            <li>Software Engineer</li>
+            <li>Systems Engineering Student</li>
+            
+          </ul>
           <hr className={styles.solid}/>
         </article>
       </main>

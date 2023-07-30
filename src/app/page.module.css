@@ -15,4 +15,5 @@
     display: flex;
     margin: 2rem 0.5rem;
     justify-content: space-around;
+    max-height: 70%;
 }

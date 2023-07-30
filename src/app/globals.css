@@ -10,7 +10,9 @@ body {
 
 .section-title {
   font-family: 'Arial';
-  font-weight: 100;
-  letter-spacing: 8px;
+  font-weight: 200;
+  color: #4C4940;
+  font-size: 2.5rem;
+  letter-spacing: 9px;
   filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.35));
 }

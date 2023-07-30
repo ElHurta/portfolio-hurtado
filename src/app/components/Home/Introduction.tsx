@@ -14,11 +14,11 @@ export default function Introduction() {
             src={profile}
             alt="Picture of the author"
         />
-        <article>
+        <article className={styles.bulletDesc}>
           <p>
             I am a software developer with a passion for learning.
           </p>
-          <hr />
+          <hr className={styles.solid}/>
         </article>
       </main>
     </div>

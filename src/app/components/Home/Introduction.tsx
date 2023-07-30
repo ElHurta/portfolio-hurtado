@@ -1,5 +1,5 @@
 import styles from './Introduction.module.css'
-import profile from './profile.jpg'
+import profile from '../../../../assets/profile.jpg'
 import Image from 'next/image'
 
 export default function Introduction() {

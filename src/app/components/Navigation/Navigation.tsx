@@ -10,10 +10,10 @@ export function Navigation() {
                 <ul>
                     {
                         routes.map((route) => (
-                        <NavItem
-                            key = {route.path}
-                            route = {route}
-                        />
+                            <NavItem
+                                key = {route.path}
+                                route = {route}
+                            />
                         ))
                     }
                 </ul>

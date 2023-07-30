@@ -1,8 +1,11 @@
 body {
+  display: flex;
   margin: 0;
   box-sizing: border-box;
   background-color: #D7D1B8;
   height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .section-title {

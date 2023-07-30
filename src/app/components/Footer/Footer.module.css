@@ -1,0 +1,12 @@
+.footer {
+    border-image-source: url('../../../../assets/borderDecoration.svg');
+    
+    border-image-slice: 34 0 0 0;
+    border-image-width: 20px 0 0 0;
+    border-image-repeat: round;
+    border-width: 20px 0 0 0;
+    border-style: solid;
+
+    height: 10vh;
+    margin: 0rem 2rem;
+}

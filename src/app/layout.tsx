@@ -4,6 +4,7 @@ import './globals.css'
 import { Navigation } from './components/Navigation/Navigation'
 
 import styles from './styles/main.module.css'
+import Footer from './components/Footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Juan Hurtado Developer Portfolio',
@@ -20,7 +21,7 @@ export default function RootLayout({children,}: {
         <main className={styles.mainContent}>
           {children}
         </main>
-        <footer />
+        <Footer />
       </body>
     </html>
   )

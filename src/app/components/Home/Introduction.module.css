@@ -2,12 +2,11 @@
     width: 40%;
     background-color: #E1DBC1;
     font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 100;
 
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .IntroContainer p {
@@ -27,8 +26,7 @@
 }
 
 .IntroContainer main {
-    padding: 1rem;
-    gap: 10px;
+    padding: 0.8rem;
 }
 
 .IntroInfo {
@@ -38,10 +36,14 @@
 }
 
 .profilePic {
-    max-width: 50%;
+    max-width: 38%;
     height: auto;
     object-fit: cover;
     filter: saturate(0.8) sepia(0.3);
+}
+
+.bulletDesc {
+    width: 60%;
 }
 
 hr.solid {

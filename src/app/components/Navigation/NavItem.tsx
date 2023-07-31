@@ -6,23 +6,22 @@ import Image from "next/image"
 import pointer from '../../../../assets/pointer.svg'
 
 import styles from './NavItem.module.css'
+import PointerSVG from "../Icons/PointerSVG"
 
 export function NavItem({route, handleActive}: {route: Route, handleActive: (path: string) => void}){
 
     return (
         <li className={`${styles.navitem} ${route.active ? styles.navitemActive : ''}`}>
+
+            
             {
                 route.active && (        
-                    <div className={styles.pointerContainer}>
-                        <div className={styles.decorationBar}>
-
-                        </div>
-                        <Image src={pointer} alt="pointer" />
-                        <div className={styles.dotsContainer}>
-                            <div className={styles.dot}></div>
-                            <div className={styles.dot}></div>
-                        </div>
-                    </div>
+                    PointerSVG({
+                        className: styles.pointer,
+                        width: 50,
+                        height: 50,
+                        fill: '#AAA591'
+                    })
                 )
             }
 

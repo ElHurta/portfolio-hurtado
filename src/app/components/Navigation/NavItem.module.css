@@ -40,6 +40,8 @@
     border-style: solid;
     border-width: 2px 0 2px 0;
     transition: border-color 0.5s ease-in-out;
+
+    margin-left: 0.4rem;
 }
 
 .navButtonActive {
@@ -66,7 +68,7 @@
         #413E35 50%
     );
     background-position: right bottom;
-    background-size: 200% 100%;
+    background-size: 201% 100%;
     transition: background-position 0.5s ease-in-out;
 }
 

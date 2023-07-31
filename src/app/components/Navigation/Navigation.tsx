@@ -6,6 +6,7 @@ import { routes } from "@/app/routers"
 import { NavItem } from "./NavItem"
 
 import styles from './Navigation.module.css'
+import VerticalBarSVG from '../Icons/VerticalBarSVG';
 
 export function Navigation() {
 
@@ -31,6 +32,9 @@ export function Navigation() {
         <header className={styles.header}>
             <nav className={styles.navbar}>
                 <ul>
+                    <VerticalBarSVG
+                        height={40}
+                    />
                     {
                         tabs.map((route) => (
                             <NavItem

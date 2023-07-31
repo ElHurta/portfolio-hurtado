@@ -24,3 +24,9 @@
     align-items: center;
     list-style: none;
 }
+
+.decorationBar {
+    height: 100%;
+    width: 0.2rem;
+    background-color: #AAA591;
+}

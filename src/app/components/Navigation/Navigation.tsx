@@ -32,9 +32,7 @@ export function Navigation() {
         <header className={styles.header}>
             <nav className={styles.navbar}>
                 <ul>
-                    <VerticalBarSVG
-                        height={40}
-                    />
+                    <VerticalBarSVG height={40}/>
                     {
                         tabs.map((route) => (
                             <NavItem

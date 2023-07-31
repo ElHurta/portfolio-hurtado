@@ -68,7 +68,7 @@
         #413E35 50%
     );
     background-position: right bottom;
-    background-size: 201% 100%;
+    background-size: 201% 101%;
     transition: background-position 0.5s ease-in-out;
 }
 

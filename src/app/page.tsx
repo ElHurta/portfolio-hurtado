@@ -12,8 +12,8 @@ export default function Home() {
       </header>
 
       <article className={styles.homeContainer}>
-        <AboutMe />
         <Introduction />
+        <AboutMe />
       </article>
     </>
   )

@@ -4,7 +4,10 @@
     justify-content: flex-end;
     width: 25%;
     height: 100%;
+
     font-family: 'Arial';
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .navitem p {
@@ -18,10 +21,15 @@
     align-items: center;
     gap: 4px;
     width: 100%;
+    
+    transition: color 0.5s ease-in-out;
+}
+
+.navitemActive a {
+    color: #AAA591;
 }
 
 .navButton {
-    color: #413E35;
     border: none;
     padding: 0.2rem 0rem;
     cursor: pointer;
@@ -31,17 +39,48 @@
     border-color: #AAA591;
     border-style: solid;
     border-width: 2px 0 2px 0;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.navButtonActive {
+    border-color: #413E35;
+}
+
+.navButton:hover {
+    border-color: #413E35;
+}
+
+.navButtonActive:hover {
+    border-color: #AAA591;
 }
 
 .buttonContent {
     display: flex;
-    background-color: #AAA591;
     height: 100%;
     padding-left: 0.5rem;
+
+    background-color: #AAA591;
+    background: linear-gradient(
+        to left,
+        #AAA591 50%,
+        #413E35 50%
+    );
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.buttonContentActive {
+    background-position: left bottom;
 }
 
 .routeIcon {
     width: 25px;
     height: 25px;
     background-color: #413E35;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.routeIconActive {
+    background-color: #AAA591;
 }

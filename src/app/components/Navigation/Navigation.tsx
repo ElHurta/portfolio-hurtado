@@ -13,7 +13,7 @@ export function Navigation() {
     const [tabs, setTabs] = useState(() => {
         if (globalThis.localStorage.getItem('activeTab')) {
             routes.map((route) => {
-                if (route.path === window.localStorage.getItem('activeTab')) {
+                if (route.path === globalThis.localStorage.getItem('activeTab')) {
                     route.active = true
                 } else {
                     route.active = false
@@ -25,7 +25,7 @@ export function Navigation() {
     })
 
     const handleActive = (path: string) => {
-        window.localStorage.setItem('activeTab', path)
+        globalThis.localStorage.setItem('activeTab', path)
 
         const newTabs = tabs.map((route) => {
             if (route.path === path) {

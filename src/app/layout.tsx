@@ -11,9 +11,10 @@ export const metadata: Metadata = {
   description: 'This is my personal portfolio site, describes my skills and projects I have worked on. Design inspired on NieR:Automata.',
 }
 
-export default function RootLayout({children,}: {
+export default async function RootLayout({children,}: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body>

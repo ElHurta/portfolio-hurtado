@@ -9,8 +9,6 @@ const calculateAge = (birthday: string) => {
 }
 
 export default function Introduction({profile} :{ profile: any }) {
-
-  console.log(Date.parse(profile.birthday))
   return (
     <div className={styles.IntroContainer}>
       <header>

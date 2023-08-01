@@ -4,9 +4,10 @@ import { api_config } from "../app/config"
 export async function getProfile(developerId: string): Promise<Profile> {
 
     //GetProfile
-    const profile = await fetch(`${api_config.api_host}${api_config.api_port}/api/collections/developer/records/${developerId}`,
+    const profile = await fetch(`${api_config.api_host}${api_config.api_port}/api/collections/developer/records/${developerId}?expand=skills`,
         {
             method: 'GET',
+            cache: 'no-store',
             headers: {
                 'Content-Type': 'application/json',
             }

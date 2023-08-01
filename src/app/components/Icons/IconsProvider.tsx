@@ -1,22 +1,34 @@
 import React from 'react'
-import { FaAws, FaReact } from 'react-icons/fa'
-import { SiCss3, SiHtml5, SiJavascript, SiTypescript } from 'react-icons/si'
+import { FaAws, FaReact, FaNodeJs, FaSass } from 'react-icons/fa'
+import { SiTypescript } from 'react-icons/si'
+import { IoLogoJavascript, IoLogoIonic } from 'react-icons/io5'
+import { GrMysql } from 'react-icons/gr'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { LiaAngular } from 'react-icons/lia'
 
 export default function IconsProvider({requestedIcon}: {requestedIcon: string}) {
   
     switch (requestedIcon) {
-        case 'FaReact':
-            return <FaReact />
-        case 'SiJavascript':
-            return <SiJavascript />
         case 'SiTypescript':
             return <SiTypescript />
-        case 'SiHtml5':
-            return <SiHtml5 />
-        case 'SiCss3':
-            return <SiCss3 />
+        case 'IoLogoJavascript':
+            return <IoLogoJavascript />
+        case 'GrMysql':
+            return <GrMysql />
+        case 'TbBrandNextjs':
+            return <TbBrandNextjs />
+        case 'FaNodeJs':
+            return <FaNodeJs />
         case 'FaAws':
             return <FaAws />
+        case 'IoLogoIonic':
+            return <IoLogoIonic />
+        case 'FaSass':
+            return <FaSass />
+        case 'LiaAngular':
+            return <LiaAngular />
+        case 'FaReact':
+            return <FaReact />
         default:
             return <></>
 }}

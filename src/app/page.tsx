@@ -21,7 +21,9 @@ export default async function Home() {
         <Introduction
           profile={profile}
         />
-        <AboutMe />
+        <AboutMe
+          profile={profile}
+        />
       </article>
     </>
   )

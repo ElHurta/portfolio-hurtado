@@ -3,8 +3,6 @@ import IconsProvider from './IconsProvider';
 import styles from './SkillIcons.module.css'
 
 export default function SkillIcons({icons}: {icons: any[]}) {
-
-  console.log(icons)
   return (
     <div className={styles.iconsContainer}>
         {

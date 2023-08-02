@@ -1,6 +1,7 @@
 import styles from './Introduction.module.css'
 import Image from 'next/image'
 import { api_config } from '@/app/config'
+import DevFeatures from './DevFeatures';
 
 const calculateAge = (birthday: string) => {
   const ageDifMs = Date.now() - Date.parse(birthday);
@@ -24,12 +25,11 @@ export default function Introduction({profile} :{ profile: any }) {
         />
         <article className={styles.bulletDesc}>
           <ul>
-            <li>Full Stack Developer</li>
-            <li>Software Engineer</li>
-            <li>Systems Engineering Student</li>
-            
+            <DevFeatures
+              features={profile.features.split(',')}
+              languages={profile.expand.languages}
+            />
           </ul>
-          <hr className={styles.solid}/>
         </article>
       </main>
     </div>

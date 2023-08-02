@@ -44,8 +44,12 @@
 
 .bulletDesc {
     width: 60%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
-hr.solid {
-    border: 1px solid #4C4940;
+.bulletDesc ul {
+    list-style-type: none;
+    padding: 0;
 }

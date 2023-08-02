@@ -27,6 +27,7 @@
 
 .IntroContainer main {
     padding: 0.8rem;
+    gap: 10px
 }
 
 .IntroInfo {
@@ -52,4 +53,5 @@
 .bulletDesc ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }

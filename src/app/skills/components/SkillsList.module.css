@@ -7,7 +7,24 @@
     font-weight: 100;
 
     padding-top: 0.8rem;
-    overflow-y: auto;
+    overflow-y: scroll;
+}
+
+.skillsContainer::-webkit-scrollbar-button {
+    background-color: #413E35;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.skillsContainer::-webkit-scrollbar-thumb {
+    background: #413E35;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.skillsContainer::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
 }
 
 .listElement{

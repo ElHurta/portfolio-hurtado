@@ -1,8 +1,9 @@
 import React from 'react'
-import { FaAws, FaReact, FaNodeJs, FaSass } from 'react-icons/fa'
+import { FaAws, FaReact, FaNodeJs, FaSass, FaGithub } from 'react-icons/fa'
 import { SiTypescript } from 'react-icons/si'
 import { IoLogoJavascript, IoLogoIonic } from 'react-icons/io5'
 import { GrMysql } from 'react-icons/gr'
+import { BsGit} from 'react-icons/bs'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { LiaAngular } from 'react-icons/lia'
 
@@ -29,6 +30,10 @@ export default function IconsProvider({requestedIcon}: {requestedIcon: string}) 
             return <LiaAngular />
         case 'FaReact':
             return <FaReact />
+        case 'BsGit':
+            return <BsGit />
+        case 'FaGithub':
+            return <FaGithub />
         default:
             return <></>
 }}

@@ -7,7 +7,7 @@ export default function AboutMe({profile}: {profile: Profile}) {
   return (
     <div className={styles.aboutContainer}>
       <p className={styles.longDesc}>
-        I&apos;m a software developer with a passion for learning and creating
+        {profile.long_description}
       </p>
       <hr className={styles.solid} />
       {/* Skills Icons */}

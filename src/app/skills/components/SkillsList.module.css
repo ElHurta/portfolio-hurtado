@@ -1,0 +1,47 @@
+.skillsContainer {
+    background-color: #E1DBC1;
+    filter: drop-shadow(2px 2px 0px #413E35);
+    width: 30%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+
+    padding-top: 0.8rem;
+    overflow-y: auto;
+}
+
+.listElement{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    list-style-type: none;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+    text-decoration: none;
+    color: #413E35;
+}
+
+.listElement:hover {
+    background-color: #B7977E;
+    color: #E1DBC1;
+}
+
+.listElement li {
+    margin: 0.2rem 0;
+}
+
+.customMarker{
+    background-color: #B7977E;
+    height: 30px;
+    width: 5px;
+}
+
+.subtitle{
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: 0.8rem 0
+}

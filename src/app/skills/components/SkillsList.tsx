@@ -9,15 +9,17 @@ export default async function SkillsList() {
   const skills = await getSkills()
 
   return (
-    <section className={styles.skillsContainer}>
-      {
-        skills.map(skill => (
-          <Link className={styles.listElement} href={`/skills/${skill.id}`} key={skill.id}>
-              <div className={styles.customMarker}></div>
-              <li>{skill.name}</li>
-          </Link>
-        ))
-      }
-    </section>
+    <div className={styles.box}>
+      <article className={styles.skillsContainer}>
+        {
+          skills.map(skill => (
+            <Link className={styles.listElement} href={`/skills/${skill.id}`} key={skill.id}>
+                <div className={styles.customMarker}></div>
+                <li>{skill.name}</li>
+            </Link>
+          ))
+        }
+      </article>
+    </div>
   )
 }

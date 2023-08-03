@@ -1,13 +1,16 @@
-.skillsContainer {
+.box {
+    width: 30%;
     background-color: #E1DBC1;
     filter: drop-shadow(2px 2px 0px #413E35);
-    width: 30%;
+    padding: 0.8rem 0.3rem 0.8rem 0rem;
+}
+
+.skillsContainer {
     font-family: 'Arial', sans-serif;
     font-size: 1.3rem;
     font-weight: 100;
-
-    padding-top: 0.8rem;
     overflow-y: scroll;
+    height: 100%;   
 }
 
 .skillsContainer::-webkit-scrollbar-button {

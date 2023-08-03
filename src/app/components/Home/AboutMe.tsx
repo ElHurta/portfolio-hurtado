@@ -3,7 +3,7 @@ import SkillIcons from "../Icons/SkillIcons";
 import { Profile } from "@/interfaces/portfolio.interfaces";
 
 export default function AboutMe({profile}: {profile: Profile}) {
-  console.log(profile);
+
   return (
     <div className={styles.aboutContainer}>
       <p className={styles.longDesc}>

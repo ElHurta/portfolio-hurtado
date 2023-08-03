@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 
 import { routes } from "@/app/routers"
 import { NavItem } from "./NavItem"
@@ -10,33 +11,18 @@ import VerticalBarSVG from '../Icons/VerticalBarSVG';
 
 export function Navigation() {
 
-    const [tabs, setTabs] = useState(() => {
-        if (globalThis.localStorage.getItem('activeTab')) {
-            routes.map((route) => {
-                if (route.path === globalThis.localStorage.getItem('activeTab')) {
-                    route.active = true
-                } else {
-                    route.active = false
-                }
-                return route
-            })
-        }
-        return routes
-    })
+    const pathname = usePathname()
 
-    const handleActive = (path: string) => {
-        globalThis.localStorage.setItem('activeTab', path)
+    const [tabs, setTabs] = useState(routes)
 
-        const newTabs = tabs.map((route) => {
-            if (route.path === path) {
-                route.active = true
-            } else {
-                route.active = false
+    useEffect(() => {
+        setTabs(routes.map((route) => {
+            return {
+                ...route,
+                active: pathname === route.path
             }
-            return route
-        })
-        setTabs(newTabs)
-    }
+        }))
+    }, [pathname])
 
     return (
         <header className={styles.header}>
@@ -48,7 +34,6 @@ export function Navigation() {
                             <NavItem
                                 key={route.path}
                                 route={route}
-                                handleActive={handleActive}
                             />
                         ))
                     }

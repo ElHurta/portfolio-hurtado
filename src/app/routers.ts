@@ -5,7 +5,7 @@ export interface Route {
 }
 
 export const routes: Route[] = [
-    { label: 'ME', path: '/', active : true },
+    { label: 'ME', path: '/', active : false },
     { label: 'SKILLS', path: '/skills', active : false },
     { label: 'PROJECTS', path: '/projects', active : false },
     { label: 'CONTACT', path: '/contact', active : false },

@@ -6,7 +6,7 @@ import Link from "next/link"
 import styles from './NavItem.module.css'
 import PointerSVG from "../Icons/PointerSVG"
 
-export function NavItem({ route, handleActive }: { route: Route, handleActive: (path: string) => void }) {
+export function NavItem({ route }: { route: Route}) {
 
     return (
         <li className={`${styles.navitem} ${route.active ? styles.navitemActive : ''}`}>
@@ -24,7 +24,6 @@ export function NavItem({ route, handleActive }: { route: Route, handleActive: (
 
             <div className={`${styles.navButton} ${route.active ? styles.navButtonActive : ''}`}>
                 <div
-                    onClick={() => handleActive(route.path)}
                     className={`${styles.buttonContent} ${route.active ? styles.buttonContentActive : ''}`}>
                     <Link href={route.path}>
                         <div className={`${styles.routeIcon} ${route.active ? styles.routeIconActive : ''}`}></div>

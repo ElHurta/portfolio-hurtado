@@ -20,13 +20,13 @@ export default async function SkillDetail({params}: {params: {skillDetail: strin
           />
         </aside>
         <aside className={styles.skillInfo}>
-          <div>
+          <div className={styles.skillDesc}>
             <header className={styles.detailHeader}>
               Description
             </header>
             <p>{currentSkill.description}</p>
           </div>
-          <div>
+          <div className={styles.skillExp}>
             <header className={styles.detailHeader}>
               Related Experience
             </header>

@@ -1,45 +1,49 @@
 .skillDetailContainer {
-    width: 40%;
+    width: 50%;
     background-color: #E1DBC1;
     font-family: 'Arial', sans-serif;
     font-size: 1.3rem;
     font-weight: 100;
+
     display: flex;
     flex-direction: column;
 }
 
+.skillDetailContainer p {
+    margin: 0;
+}
+
 .detailHeader {
-    display: flex;
-    justify-content: space-between;
     padding: 0.2rem 1rem;
+
     background-color: #4B483F;
     color: #E1DBC1;
+
     font-weight: 100;
     letter-spacing: 5px;
 }
 
-.detailHeader p {
-    margin: 0;
-}
-
 .skillMainInfo {
-    padding: 0.8rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 100%;
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px
 }
 
-.iconContainer {
-    width: 50%;
+.iconContainer{
+    width: 30%;
 }
 
 .iconContainer svg {
-    height: 50%;
     width: 100%;
+    height: 100%;
 }
 
 .skillInfo {
-    width: 100%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

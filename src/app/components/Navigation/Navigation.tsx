@@ -16,10 +16,11 @@ export function Navigation() {
     const [tabs, setTabs] = useState(routes)
 
     useEffect(() => {
+        const firstURL = `/${pathname.split('/')[1]}`
         setTabs(routes.map((route) => {
             return {
                 ...route,
-                active: pathname === route.path
+                active: firstURL === route.path
             }
         }))
     }, [pathname])

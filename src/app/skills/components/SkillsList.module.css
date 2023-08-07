@@ -1,9 +1,8 @@
 .box {
-    width: 30%;
+    width: 40%;
     background-color: #E1DBC1;
     filter: drop-shadow(2px 2px 0px #413E35);
     padding: 0.8rem 0.3rem 0.8rem 0rem;
-    height: 100%;
 }
 
 .skillsContainer {

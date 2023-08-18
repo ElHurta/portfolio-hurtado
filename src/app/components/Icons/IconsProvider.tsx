@@ -7,11 +7,16 @@ import { BsGit} from 'react-icons/bs'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { LiaAngular } from 'react-icons/lia'
 
-export default function IconsProvider({requestedIcon}: {requestedIcon: string}) {
-  
+export default function IconsProvider({requestedIcon, applyColor}: {requestedIcon: string, applyColor?: boolean}) {
+
+
     switch (requestedIcon) {
         case 'SiTypescript':
-            return <SiTypescript />
+            return (
+                <div style={{color: "#6be38b"}}>
+                    <SiTypescript />
+                </div>
+            )
         case 'IoLogoJavascript':
             return <IoLogoJavascript />
         case 'GrMysql':

@@ -14,23 +14,18 @@ export default async function SkillDetail({params}: {params: {skillDetail: strin
         <p>{currentSkill.name} - Info</p>
       </header>
       <main className={styles.skillMainInfo}>
-        <aside style={{color: '#FFF'}} className={styles.iconContainer}>
+        <aside className={styles.iconContainer}>
           <IconsProvider
+            applyColor = {true}
             requestedIcon={currentSkill.big_icon_name}
           />
         </aside>
         <aside className={styles.skillInfo}>
           <div className={styles.skillDesc}>
             <header className={styles.detailHeader}>
-              Description
+              I can:
             </header>
             <p>{currentSkill.description}</p>
-          </div>
-          <div className={styles.skillExp}>
-            <header className={styles.detailHeader}>
-              Related Experience
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil illo dolores! Illo esse accusantium voluptate, molestias quidem porro debitis.</p>
           </div>
         </aside>
       </main>
